@@ -179,7 +179,7 @@ main =
 ### _Manually_ Compile the `Elm` Code
 
 ```sh
-elm make elm/src/Main.elm --output=../priv/static/assets/elm.js
+elm make src/Main.elm --output=../../priv/static/assets/elm.js
 ```
 That results in an un-optimized **`elm.js`** file that is **488kb**
 For development/testing purposes this is fine;
@@ -195,7 +195,7 @@ Let's include this file in our `Phoenix` template just to show that it works.
 > it's just for basic illustration as a "_quick win_".
 
 Open the 
-`lib/app_web/templates/layout/root.html.heex` 
+`lib/app_web/components/layout/root.html.heex` 
 file
 and add the following lines just before the `</body>` element:
 
